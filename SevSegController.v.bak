@@ -1,0 +1,14 @@
+// ============================================================================
+//   Ver  :| Author					:| Mod. Date :| Changes Made:
+//   V0.1 :| viCppDev			    :| 10/06/2020:| Added Verilog file
+// ============================================================================
+
+module SevSegController(input  [3:0]dig, input  dot, output wire [7:0]leds);
+
+    assign leds[0] =  (dig[0] & !dig[1] & !dig[2] & !dig[3]) | (!dig[0] & dig[1] & !dig[2] & !dig[3]) | (dig[0] & !dig[1] & dig[2] & dig[3]);
+
+
+	
+
+
+endmodule
