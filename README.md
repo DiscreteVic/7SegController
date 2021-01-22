@@ -3,7 +3,7 @@ Controller to 7-seg display developed at DE10-Lite (Altera MAX10)
 
 Typical problem with DE10-Lite at Ubuntu 20.4:
 	
-   -Usb Blaster
+   -Usb Blaster (use USB 2.0)
 	Add "usbblaster.rules" file at /etc/udev/rules.d/ . content of file:
 	
 	   SUBSYSTEM=="usb", ATTR{idVendor}=="09fb", ATTR{idProduct}=="6001", MODE="0666"
